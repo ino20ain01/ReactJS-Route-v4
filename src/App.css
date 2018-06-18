@@ -26,8 +26,3 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-.active {
-  background: #000000 !important;
-  color: #ffffff !important;
-}
