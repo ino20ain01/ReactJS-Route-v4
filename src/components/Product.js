@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
 
-class About extends Component {
+class Product extends Component {
     render() {
+
+        let { match } = this.props;
+        let { name }  = match.params;
+
         return (
             <div>
-                Đây là About
+                Đây là { name }
             </div>
         );
     }
 }
 
-export default About;
+export default Product;

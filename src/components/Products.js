@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
+import Product from './Product';
 
 class Products extends Component {
     render() {
@@ -45,6 +46,9 @@ class Products extends Component {
                     <ul className="list-group">
                         { result }
                     </ul>
+                </div>
+                <div className="row">
+                    <Route path="/products/:name" component={ Product } />
                 </div>
             </div>
         );
